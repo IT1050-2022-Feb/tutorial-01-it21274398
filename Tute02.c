@@ -19,6 +19,18 @@ Amount = 30 x 50 + (50-30) x 40 = 2300*/
 #include <stdio.h>
 
 int main() {
+  int x , y , tot;
+  printf("Input the distance :");
+  scanf("%d",&x);
+  if(x<30){
+    tot = x * 50 ;
+  }
+  else if(x>30){
+    y = x - 30;
+    tot = 1500 + y * 40 ;
+  }
+  printf("your amount is :%d",tot);
+    
   
   return 0;
 }
